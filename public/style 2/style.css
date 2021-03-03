@@ -1,0 +1,289 @@
+header {
+    padding-left: 100px;
+}
+img {
+    padding-left: 800px;
+    transform: rotate(-20deg);
+    padding-top: 100px;
+}
+h2 {
+    display: none;
+}
+.content {
+    padding-left: 100px;
+}
+#about>h3 {
+    display: none;
+}
+h1::after{
+    
+    content: " ";
+    display: block;
+    border-bottom: 1px solid lightgray;
+      
+}
+#about>p {
+    width: 50%;
+    color: lightgray;
+    margin-top: -230px;
+}
+
+
+#competencies {
+    display: flex;
+    margin-top:20px;
+    flex-wrap:wrap;
+    border:10px solid white;
+}
+
+.skills {
+    
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;  
+}
+.skill {
+    background-color:#008080;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border: 5px white solid;
+    text-align: center;
+}
+.skills-primary{
+    display: flex;
+    flex-direction:row;
+    width: 800px;
+    margin-top: 25px;
+    margin-left: 9px;
+    
+}
+.skills-primary>.skill {
+    font-size: 20px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-secondary>.skill {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-secondary{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px; 
+}
+.skills-primary>.skill[data-skill="5"]::after {
+      content: '✭✭✭';
+      
+}
+.skills-secondary>.skill[data-skill="5"]::after {
+    content: '✭✭✭';  
+}
+[data-skill="3"]::after {
+    content: '✭✭';  
+}
+[data-skill="1"]::after {
+    content: '✭';
+    
+}
+[data-skill="9"]::after {
+    content: '✭✭✭✭✭';
+    
+}
+[data-skill="7"]::after {
+    content: '✭✭✭✭';
+    
+}
+
+#experiences {
+    display: flex;
+    flex-wrap:wrap;
+    margin-top:20px;
+    border:10px solid white;    
+}
+.experiences>h3 {
+    height: 500px;
+}
+.experience {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+    width:900px;
+     
+    margin-left: 20px;  
+}
+
+.experience:last-child {
+    margin-left: 117px;
+    
+}
+
+.experience-type {
+    color: #008080;
+}
+.experience-institution {
+    color: #008080;
+}
+.experience-details {
+    color: lightgray;
+    align-self: flex-end;
+    margin-top: -30px;
+}
+#education {
+    display: flex;
+    flex-wrap:wrap;
+    border:10px solid white;
+}
+
+#education>h3 {
+    
+    margin-left: 15px;
+}
+#hobbies {
+    display: flex;
+    border:10px solid white;
+}
+ul {
+    margin-left: 50px;
+}
+.contacts {
+    
+    display: flex;   
+}
+.contact {
+    border: 5px white solid;
+    margin-left: 100px;
+}
+
+#contact>h3 {
+    display: none;
+}
+.contact-email {
+    background-image: url(../images/email.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.contact-phone {
+    background-image: url(../images/phone.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.contact-github {
+    background-image: url(../images/github.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.contact-facebook {
+    background-image: url(../images/facebook.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+.contact-type {
+    display: none;
+}
+.contact-value {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header{
+        width: 100%;
+        height: 400px;
+    }
+    hgroup{
+        width: 100%;        
+    }
+    #about>p {
+        margin-top: -350px;
+    }
+    figure {
+        display: none;
+    }
+    
+    h3::after{
+    
+        content: " ";
+        display: block;
+        border-bottom: 1px solid black;
+          
+    }
+    
+    #about {
+      width: 100%;
+    }
+    #about>p {
+        width: 100%;
+    }
+    #competencies {
+        width: 100%;
+        
+    }
+    .skills {
+        width: 100%;
+        margin-left: -8px;
+       
+    }
+    
+    .skills-secondary {
+        margin-left: -9px;
+    }
+    #experiences {
+    width: 100%;
+    }
+    .experience {
+        margin-left: -12px;
+    }
+    .experience:last-child {
+        margin-left: -10px;
+        
+    }
+    #education {
+        width: 100%;
+    }
+    #education>h3 {
+        margin-left: -5px;
+    }
+
+    #hobbies {
+        width: 100%;
+        display: flex; 
+        flex-direction: column;
+    }
+    ul {
+        margin-left: -20px;
+    }
+    
+    #contact {
+        width: 100%;
+        margin-left: -20px;
+        }
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .skills {
+        border-left: 2px solid black;
+    }
+    #experiences>div {
+        border-left: 2px solid black;
+    }
+    #education>div {
+        border-left: 2px solid black;
+    }
+    ul {
+        border-left: 2px solid black;
+    }
+
+
+  }
